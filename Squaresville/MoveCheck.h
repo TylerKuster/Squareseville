@@ -12,6 +12,4 @@
 
 + (BOOL)checkForWinningMoveSet:(NSMutableSet*)moveSet;
 
-+ (NSSet*)allCorners;
-
 @end
