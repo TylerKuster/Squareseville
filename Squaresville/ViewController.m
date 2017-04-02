@@ -7,14 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "GameboardCollectionView.h"
 #import "SquareCollectionViewCell.h"
 #import "MoveCheck.h"
 
 
-@interface ViewController () <UICollectionViewDelegate>
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property (nonatomic, retain) IBOutlet GameboardCollectionView* gameboard;
+@property (nonatomic, retain) IBOutlet UICollectionView* gameboard;
 @property (nonatomic, retain) IBOutlet UILabel* statusLabel;
 @property (nonatomic, retain) IBOutlet UIButton* resetButton;
 
@@ -115,6 +114,24 @@
         default:
             break;
     }
+}
+
+#pragma mark - CollectionView Datasource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 16;
+}
+
+- (SquareCollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"squareCell";
+    
+    SquareCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    cell.squareLabel.text = @"";
+    
+    return cell;
 }
 
 @end

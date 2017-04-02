@@ -16,7 +16,6 @@
 		798E11511E8E95A800E29853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798E114F1E8E95A800E29853 /* LaunchScreen.storyboard */; };
 		798E115C1E8E95A800E29853 /* SquaresvilleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 798E115B1E8E95A800E29853 /* SquaresvilleTests.m */; };
 		798E11671E8E95A800E29853 /* SquaresvilleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 798E11661E8E95A800E29853 /* SquaresvilleUITests.m */; };
-		798E11791E8E962B00E29853 /* GameboardCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 798E11781E8E962B00E29853 /* GameboardCollectionView.m */; };
 		798E117C1E8E9AD400E29853 /* SquareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 798E117B1E8E9AD400E29853 /* SquareCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +55,6 @@
 		798E11621E8E95A800E29853 /* SquaresvilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquaresvilleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		798E11661E8E95A800E29853 /* SquaresvilleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquaresvilleUITests.m; sourceTree = "<group>"; };
 		798E11681E8E95A800E29853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		798E11771E8E962B00E29853 /* GameboardCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameboardCollectionView.h; path = ../GameboardCollectionView.h; sourceTree = "<group>"; };
-		798E11781E8E962B00E29853 /* GameboardCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameboardCollectionView.m; path = ../GameboardCollectionView.m; sourceTree = "<group>"; };
 		798E117A1E8E9AD400E29853 /* SquareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCollectionViewCell.h; sourceTree = "<group>"; };
 		798E117B1E8E9AD400E29853 /* SquareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,17 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46641B4D1E8EFAA50052B23F /* Gameboard */ = {
-			isa = PBXGroup;
-			children = (
-				798E11771E8E962B00E29853 /* GameboardCollectionView.h */,
-				798E11781E8E962B00E29853 /* GameboardCollectionView.m */,
-				798E117A1E8E9AD400E29853 /* SquareCollectionViewCell.h */,
-				798E117B1E8E9AD400E29853 /* SquareCollectionViewCell.m */,
-			);
-			name = Gameboard;
-			sourceTree = "<group>";
-		};
 		798E11351E8E95A800E29853 = {
 			isa = PBXGroup;
 			children = (
@@ -125,9 +111,10 @@
 				798E11451E8E95A800E29853 /* AppDelegate.m */,
 				798E11471E8E95A800E29853 /* ViewController.h */,
 				798E11481E8E95A800E29853 /* ViewController.m */,
+				798E117A1E8E9AD400E29853 /* SquareCollectionViewCell.h */,
+				798E117B1E8E9AD400E29853 /* SquareCollectionViewCell.m */,
 				46641B4A1E8ED1050052B23F /* MoveCheck.h */,
 				46641B4B1E8ED1050052B23F /* MoveCheck.m */,
-				46641B4D1E8EFAA50052B23F /* Gameboard */,
 				798E114A1E8E95A800E29853 /* Main.storyboard */,
 				798E114D1E8E95A800E29853 /* Assets.xcassets */,
 				798E114F1E8E95A800E29853 /* LaunchScreen.storyboard */,
@@ -302,7 +289,6 @@
 				798E117C1E8E9AD400E29853 /* SquareCollectionViewCell.m in Sources */,
 				46641B4C1E8ED1050052B23F /* MoveCheck.m in Sources */,
 				798E11491E8E95A800E29853 /* ViewController.m in Sources */,
-				798E11791E8E962B00E29853 /* GameboardCollectionView.m in Sources */,
 				798E11461E8E95A800E29853 /* AppDelegate.m in Sources */,
 				798E11431E8E95A800E29853 /* main.m in Sources */,
 			);

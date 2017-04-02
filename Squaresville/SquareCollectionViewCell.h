@@ -15,6 +15,8 @@ typedef enum : NSUInteger {
 
 @interface SquareCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, retain) IBOutlet UILabel* squareLabel;
+
 - (void)setSelected:(BOOL)selected byPlayer:(Player)player;
 
 @end

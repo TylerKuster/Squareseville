@@ -9,12 +9,6 @@
 #import "SquareCollectionViewCell.h"
 
 
-@interface SquareCollectionViewCell ()
-
-@property (nonatomic, retain) IBOutlet UILabel* squareLabel;
-
-@end
-
 @implementation SquareCollectionViewCell
 
 - (void)setSelected:(BOOL)selected byPlayer:(Player)player
