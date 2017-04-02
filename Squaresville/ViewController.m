@@ -23,7 +23,7 @@
 @property (nonatomic, retain) NSMutableSet* playerTwoSquares;
 
 @property (nonatomic, assign) Player whosTurn;
-@property (nonatomic, retain) MoveCheck* moveCheck;
+@property (nonatomic, assign) MoveCheck* moveCheck;
 
 @end
 
